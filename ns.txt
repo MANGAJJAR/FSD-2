@@ -1,0 +1,102 @@
+PS D:\FSD-2 Man Gajjar> node -v
+v18.16.0
+PS D:\FSD-2 Man Gajjar> node
+Welcome to Node.js v18.16.0.
+Type ".help" for more information.
+> 1
+1
+> 2+2
+4
+> 2+2-1+2+@
+2+2-1+2+@
+        ^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> 2+2-1+2+
+... 1
+6
+> x =10
+10
+> x
+10
+> x-2
+8
+> var y = 20 
+undefined
+> y
+20
+> x-y
+-10
+> console.log('Hello')
+Hello
+undefined
+> console.log('Hello')
+Hello
+undefined
+> repl.repl.ignoreUndefined
+false
+> console.log('Hello')
+Hello
+undefined
+> repl.repl.ignoreUndefined = true
+true
+> console.log('Hello')
+Hello
+> for(i=0;i<5;i++){
+... print(i)}
+Uncaught ReferenceError: print is not defined
+> while(i=5){
+... .clear
+> i = 0
+0
+> x=0 while(x<=5){ print(x)}
+x=0 while(x<=5){ print(x)}
+    ^^^^^
+
+Uncaught SyntaxError: Unexpected token 'while'
+> x = 0
+0
+> while(x>5){ print(x)}
+> while(x<5){ print(x)}
+Uncaught ReferenceError: print is not defined
+> .clear
+> var x = 0
+> do{
+... x++;
+... console.log("X="+x)
+... }
+... while(x<5);
+X=1
+X=2
+X=3
+X=4
+X=5
+> _var
+Uncaught ReferenceError: _var is not defined
+> var sum(_)
+var sum(_)
+       ^
+
+Uncaught SyntaxError: Unexpected token '('
+> var sum _
+var sum _
+        ^
+
+Uncaught SyntaxError: Unexpected identifier
+> var sum = _
+> console.log
+[Function: log]
+> console.log(sum)
+0
+> var x = 10
+> var y = 20
+> x+y
+30
+> console.log(sum)
+0
+> sum=_
+30
+> console.log(sum)
+30
+> .editor
+// Entering editor mode (Ctrl+D to finish, Ctrl+C to cancel)
