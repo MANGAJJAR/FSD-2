@@ -1,0 +1,51 @@
+html 
+ head
+  title My Pug 
+ boby
+    h1 heading 
+    p My PAGE PUG.
+
+
+    ul 
+     li 1
+     li 2
+     li 3 
+    ol
+      li hog 
+      li pekka
+      li goblien
+
+
+    p(style="font-size:2px")
+    i italic para 
+    b(style="color:blue") bold italic blue page
+
+
+    p 
+     |The File Will Not 
+     |Render Property Tittle 
+     |Identation does not set 
+     |Property
+
+     a(href='/') Hello
+
+     br 
+
+     table(border="2px solid")
+      tr
+       th Name 
+       th Roll 
+      tr
+      tr
+       td man 
+       td 1
+      tr
+       td yash 
+       td 2
+ 
+ -var num=2
+ -var color="green"
+ -var list=["India","USA"]
+ h4="3 Times Number is "+num*3
+ h3="I like "+color+" Color"
+ h3="Country: "+list[0]

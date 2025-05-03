@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <form action="/calculator" method="GET">
+        Number 1: <input type="number" name="num1" required> <br>
+        Number 2: <input type="number" name="num2" required> <br>
+
+        <select name="formula" id="formula" required>
+            <option value="">Select Formula</option>
+            <option value="add">Addition</option>
+            <option value="sub">Subtraction</option>
+            <option value="mul">Multiplication</option>
+            <option value="div">Division</option>
+        </select> <br>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+
+</html>
