@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multer</title>
+</head>
+
+<body>
+    <form method="post" action="/uploadfile" enctype="multipart/form-data">
+        
+        <label for="name" name="fname">Username:
+            <input type="text">
+        </label> <br> <br>
+
+        <label for="pass">Password:
+            <input type="password" name="pass">
+        </label> <br> <br>
+
+        <label for="file">Upload:
+            <input type="file" name="file" accept=".jpg,.jpeg,.png">
+        </label> <br> <br>
+
+        <input type="submit" value="Upload">
+    </form>
+
+</body>
+
+</html>
